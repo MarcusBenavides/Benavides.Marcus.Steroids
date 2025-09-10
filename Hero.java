@@ -76,7 +76,11 @@ public void processKeys()
      
     if(Greenfoot.isKeyDown("space"))
     {
-        shoot();
+        shootLaser();
+    }
+    else if (Greenfoot.isKeyDown("f"))
+    {
+        shootFireBall();
     }
 }
 
@@ -89,12 +93,18 @@ public void trackMouse()
     }
 }
 
-public void shoot()
+public void shootLaser()
 {
     Laser laser = new Laser(5);
     laser.setRotation(getRotation());
     getWorld().addObject(laser,getX(),getY());
     
 }
-
+public void shootFireBall()
+{
+    FireBall fireball = new FireBall(2);
+    fireball.setRotation(getRotation());
+    getWorld().addObject(fireball,getX(),getY());
+    
+}
 }

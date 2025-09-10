@@ -1,18 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Laser here.
+ * Write a description of class FireBall here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Laser extends Projectile
+public class FireBall extends Projectile
 {
-    public Laser(int s)
+    public FireBall(int s)
     {
-        super(s,1);
+        super(s,5);
     }
-    
     public void act()
     {
         super.act();
